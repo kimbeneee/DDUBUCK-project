@@ -1,0 +1,5 @@
+rootProject.name = 'DDUBUCK_PROJECT'
+include 'DDUBUCK_common'
+include 'DDUBUCK_web'
+include 'DDUBUCK_api'
+
