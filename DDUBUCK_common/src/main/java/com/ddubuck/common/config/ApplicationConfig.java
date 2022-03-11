@@ -5,6 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@EntityScan({"com.ddubuck.common.model"})
+@EntityScan({"com.ddubuck.common.domain"})
 public class ApplicationConfig {
 }

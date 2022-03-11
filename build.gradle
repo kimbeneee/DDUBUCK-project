@@ -13,8 +13,8 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.3.0.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'org.springframework.boot' version '2.4.1'
+    id 'io.spring.dependency-management' version '1.0.0.RELEASE'
 }
 
 repositories {
@@ -57,5 +57,22 @@ subprojects {
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
         implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation 'mysql:mysql-connector-java'
+        implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
+        implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
+        implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
+
+    }
+}
+
+project(':DDUBUCK_api') {
+    dependencies {
+        compile project(':DDUBUCK_common')
+    }
+}
+
+project(':DDUBUCK_web') {
+    dependencies {
+        compile project(':DDUBUCK_common')
     }
 }
