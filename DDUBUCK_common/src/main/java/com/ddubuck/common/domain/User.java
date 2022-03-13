@@ -3,10 +3,12 @@ package com.ddubuck.common.domain;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Getter
+@Setter
 @NoArgsConstructor // 기본 생성자 자동 추가
 @Entity
 @Table( name = "tbl_user")
