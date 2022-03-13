@@ -1,0 +1,24 @@
+<!-- greeting.html -->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>뚜벅뚜벅</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+<div id="map" style="width:100vw;height:100vh;"></div>
+</body>
+<!-- kakao map API -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=dfe6646005a1231772320f9f25f9d529"></script>
+<script>
+  var container = document.getElementById('map');
+  var options = {
+    center: new kakao.maps.LatLng(33.450701, 126.570667),
+    level: 3
+  };
+
+  var map = new kakao.maps.Map(container, options);
+
+</script>
+</html>
